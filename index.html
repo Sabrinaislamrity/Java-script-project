@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Dashboard</title>
+   <!-- font awasome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- daisyUi cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .work-sans {
+      font-family: "Work Sans", serif;
+    }
+    .comment{
+        background-color: white; 
+    color: #4B5563; 
+    font-size: 14px; 
+    margin-top: 10px; 
+    padding: 16px; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 100%; 
+    white-space: normal;
+    word-wrap: break-word;
+    }
+  </style>
+</head>
+<body class="bg-[#F4F7FF] work-sans">
+
+    
+    <div class="p-6">
+      
+        <div class="flex justify-between items-center bg-white shadow-md p-4 rounded-lg">
+           <div class="flex">
+            <img src="./assets/logo.png" alt="">
+
+             <h1 class="text-xl  flex items-center px-3">Dev
+            <span class=" text-black font-bold pl-1 py-1 rounded-md">Board</span>
+        </h1>
+    </div>
+            <div class="flex items-center gap-4">
+               <div class="flex">
+              
+                <button class="w-32 h-12 flex items-center justify-center border-2 rounded-3xl bg-[#F4F7FF] hover:bg-gray-200 text-black font-bold">
+                    <input type="checkbox" class="checkbox checkbox-primary" checked />
+                    <span class="text-3xl px-3 ">23</span></button>
+               </div>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-circle btn-theme">
+                        <img src="./assets/theme-btn.png" class="w-8 h-8 rounded-full" alt="User">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+          
+           
+
+          
+            <div class="lg:col-span-3 bg-white shadow-md p-4 rounded-lg ">
+                <div class="bg-white text-white p-4 rounded-lg flex justify-between">
+                    <div class="shadow-md p-4 rounded-lg bg-[#F4F7FF] flex ">
+                        <div class="dropdown mt-4">
+                            <label tabindex="0" class="btn btn-circle btn-theme bg-white">
+                                <input type="checkbox" class="checkbox checkbox-primary " checked />
+                            </label>
+                        </div>
+                      
+                        <div class=" items-center mt-2">
+                            
+                            <h2 class="text-lg font-semibold text-gray-600">Task Assigned</h2>
+                            <span class="ml-2 font-bold text-3xl text-black">06</span>
+                        </div>
+                    </div>
+
+
+
+                    <div id="onother_page" class="w-2/3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white shadow-md p-4 rounded-lg flex ">
+                        <img src="./assets/board.png" alt="">
+                        <span class="font-bold text-3xl ml-20 ">Discover Something <br> New Today!</span>
+                    </div>
+
+
+                    <div class="bg-[#F4F7FF] text-gray-600 shadow-md p-4 rounded-lg ">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-circle btn-theme bg-white">
+                                <img src="./assets/calender.png" class="w-8 h-8" alt="User">
+                            </label>
+                        </div>
+                        <span>
+                         Fri Feb 28 2025
+                    </span>
+                </div>
+                </div>
+
+          
+                <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                   
+                    <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
+                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
+                            <button id="complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
+                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
+                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
+                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
+                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
+                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
+                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
+                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
+                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
+                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
+                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row-span-1 bg-white shadow-md p-4 rounded-lg flex flex-col items-center text-center ">
+              
+                <div id="comment_box" class="mt-6 " style="width: 100%; max-width: 400px;">
+                    <h2 class="text-lg font-semibold "><i class="fa-solid fa-clock mr-2"></i>Activity Log</h2>
+                    <button id="clear_history" class="btn bg-[#3752FD] text-white mt-2">Clear History</button>
+                </div>
+                
+            </div>
+            <div  id="inner_comment" ></div>
+
+        </div>
+    </div>
+<script src="./js/onother.js"></script>
+<script src="./js/complete.js"></script>
+</body>
+</html>
