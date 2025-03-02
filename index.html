@@ -51,11 +51,11 @@
               
                 <button class="w-32 h-12 flex items-center justify-center border-2 rounded-3xl bg-[#F4F7FF] hover:bg-gray-200 text-black font-bold">
                     <input type="checkbox" class="checkbox checkbox-primary" checked />
-                    <span class="text-3xl px-3 ">23</span></button>
+                    <span id="add_number" class="text-3xl px-3 ">23</span></button>
                </div>
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-circle btn-theme">
-                        <img src="./assets/theme-btn.png" class="w-8 h-8 rounded-full" alt="User">
+                        <img src="./assets/theme-btn.png" class="w-8 h-8 rounded-full" alt="">
                     </label>
                 </div>
             </div>
@@ -76,16 +76,16 @@
                             </label>
                         </div>
                       
-                        <div class=" items-center mt-2">
+                        <div class=" items-center mt-2 gap-4 ">
                             
                             <h2 class="text-lg font-semibold text-gray-600">Task Assigned</h2>
-                            <span class="ml-2 font-bold text-3xl text-black">06</span>
+                            <span id="reduse_number" class="ml-2 font-bold text-3xl text-black">06</span>
                         </div>
                     </div>
 
 
 
-                    <div id="onother_page" class="w-2/3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white shadow-md p-4 rounded-lg flex ">
+                    <div id="onother_page" class="w-2/3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white shadow-md p-4 rounded-lg flex mr-2 ml-2">
                         <img src="./assets/board.png" alt="">
                         <span class="font-bold text-3xl ml-20 ">Discover Something <br> New Today!</span>
                     </div>
@@ -93,11 +93,13 @@
 
                     <div class="bg-[#F4F7FF] text-gray-600 shadow-md p-4 rounded-lg ">
                         <div class="dropdown">
-                            <label tabindex="0" class="btn btn-circle btn-theme bg-white">
-                                <img src="./assets/calender.png" class="w-8 h-8" alt="User">
-                            </label>
+
+                            <button id="bgcolour_change" onclick="makecolor()" class="btn bg-[#3752FD] text-white mt-2">
+                                 <img src="./assets/calender.png" class="w-8 h-8" alt="">
+                                </button>
+                        
                         </div>
-                        <span>
+                        <span id="curenttime_date">
                          Fri Feb 28 2025
                     </span>
                 </div>
@@ -115,54 +117,59 @@
                             <button id="complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
                         </div>
                     </div>
+                    
 
                     <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
-                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
-                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
-                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">CloudSync</h3>
+                        <p class="text-gray-600 font-bold">Add Dark Mode</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         <div class="mt-4 flex justify-between items-center">
                             <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
-                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                            <button id="frist_complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
                         </div>
                     </div>
 
                     <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
-                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
-                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
-                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">SwiftPay</h3>
+                        <p class="text-gray-600 font-bold">Optimize  Home page </p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
                         <div class="mt-4 flex justify-between items-center">
                             <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
-                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                            <button id="second_complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
                         </div>
                     </div>
 
                     <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
-                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
-                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
-                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Meta</h3>
+                        <p class="text-gray-600 font-bold">Add new emoji 🤲</p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
                         <div class="mt-4 flex justify-between items-center">
                             <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
-                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                            <button id="third_complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
                         </div>
                     </div>
 
                     <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
-                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
-                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
-                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Google LLC</h3>
+                        <p class="text-gray-600 font-bold">Integrate OpenAI API </p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
                         <div class="mt-4 flex justify-between items-center">
                             <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
-                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                            <button id="forth_complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
                         </div>
                     </div>
 
                     <div class="p-4 rounded-lg shadow-md bg-[#F4F7FF]">
-                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Shop Ease</h3>
-                        <p class="text-gray-600 font-bold">Fix Mobile Button Issue</p>
-                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h3 class=" mb-4 py-2 rounded-lg w-32 h-12 flex items-center justify-center border-none bg-white text-gray-600">Glassdoare</h3>
+                        <p class="text-gray-600 font-bold">Improve Job searching </p>
+                        <p class="text-gray-500 text-sm mt-2 shadow-md p-4 rounded-lg bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
                         <div class="mt-4 flex justify-between items-center">
                             <span class="text-sm text-gray-500">Deadline: <br> <span class="text-black font-semibold">21 March 2025</span></span>
-                            <button class="btn bg-[#3752FD] text-white mt-2">Completed</button>
+                            <button id="five_complete_comment" class="btn bg-[#3752FD] text-white mt-2">Completed</button>
                         </div>
                     </div>
 
@@ -180,8 +187,15 @@
             <div  id="inner_comment" ></div>
 
         </div>
+        
     </div>
 <script src="./js/onother.js"></script>
+<script src="./js/backto.js"></script>
 <script src="./js/complete.js"></script>
+<script src="./js/current.js"></script>
+<script src="./js/colour.js"></script>
+
+
+
 </body>
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBoard Dashboard</title>
-   <!-- font awasome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard Dashboard</title>
+  <!-- font awasome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- google fonts cdn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,22 +22,102 @@
     }
   </style>
 </head>
-<body class="bg-[#F4F7FF] work-sans">
-    <div class="p-6">
-        <div class="flex justify-between items-center bg-white shadow-md p-2 rounded-lg">
-            <div class="flex">
-             <img src="./assets/logo.png" alt="">
- 
-              <h1 class="text-xl  flex items-center px-3">Dev
-             <span class=" text-black font-bold pl-1 py-1 rounded-md">Board</span>
-         </h1>
-     </div>
-     <div class="mt-2 items-center">
-        <button id="back_desk" class="btn bg-[#3752FD] text-white ">Back to desk</button>
-    </div>
-         </div>
-    </div>
 
-    <script src="./js/backto.js"></script>
+<body class="bg-[#F4F7FF] work-sans">
+  <div class="p-6">
+    <div class="flex justify-between items-center bg-white shadow-md p-2 rounded-lg">
+      <div class="flex">
+        <img src="./assets/logo.png" alt="">
+
+        <h1 class="text-xl  flex items-center px-3">Dev
+          <span class=" text-black font-bold pl-1 py-1 rounded-md">Board</span>
+        </h1>
+      </div>
+      <div class="mt-2 items-center">
+        <button id="back_desk" class="btn bg-[#3752FD] text-white ">Back to desk</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="p-16">
+    <h2 class=" font-semibold text-gray-700 mb-4 flex justify-center text-4xl">Blogs</h2>
+
+    <div class="space-y-4">
+    
+      <div class="p-4 bg-gray-50 shadow-sm rounded-md ml-12 my-6 ">
+        <h3 class="font-semibold text-gray-800 ">
+          Question-1: What are the different ways to select an element in the DOM?
+        </h3>
+        <p class="text-gray-600 text-sm mt-2  ">
+          Here are the different ways to select an element in the DOM: <br>
+          document.getElementById("myID"); <br>
+          getElementById() <br>
+          getElementsByClassName() <br>
+          getElementsByTagName() <br>
+          querySelector() <br>
+          querySelectorAll() <br>
+          closest() <br>
+        </p>
+      </div>
+
+     
+      <div class="p-4 bg-gray-50 shadow-sm rounded-md ml-12 my-10 ">
+        <h3 class="font-semibold text-gray-800  ">
+          Question-2: What is the difference between innerHTML, innerText, and textContent?
+        </h3>
+        <p class="text-gray-600 text-sm mt-2  ">
+          innerHTML is	Gets/sets HTML content, including tags. <br>
+          innerText	is Gets/sets only visible text, ignores hidden elements. <br>
+          textContent	is Gets/sets all text, including hidden ones.
+        </p>
+      </div>
+
+      
+      <div class="p-4 bg-gray-50 shadow-sm rounded-md ml-12 my-10">
+        <h3 class="font-semibold text-gray-800  ">
+          Question-3: What is event delegation in the DOM?
+        </h3>
+        <p class="text-gray-600 text-sm mt-2  ">
+          Event Delegation is a technique where a parent element handles events for its child elements, even if they are added later.
+        </p>
+      </div>
+
+
+      <div class="p-4 bg-gray-50 shadow-sm rounded-md ml-12 my-10 ">
+        <h3 class="font-semibold text-gray-800  ">
+          Question-4: What is event bubbling in the DOM?
+        </h3>
+        <p class="text-gray-600 text-sm mt-2  ">
+          Event Bubbling is when an event starts from the target element and moves up to its parent elements in the DOM.
+        </p>
+      </div>
+
+
+      <div class="p-4 bg-gray-50 shadow-sm rounded-md ml-12 my-10">
+        <h3 class="font-semibold text-gray-800  ">
+          Question-5: How do you create, add, and remove elements using JavaScript?
+        </h3>
+        <p class="text-gray-600 text-sm mt-2  ">
+          for Create an Element we can use : <br>
+          let newDiv = document.createElement("div");
+          newDiv.textContent = "Hello";
+          <br>
+
+          for Add (Append) the Element we can use : <br>
+          document.body.appendChild(newDiv);
+          <br>
+
+          for Remove the Element we can use : <br>
+          newDiv.remove(); 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/backto.js"></script>
 </body>
+
 </html>
